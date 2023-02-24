@@ -2,6 +2,9 @@
 lab_utils_uni.py
     routines used in Course 1, Week2, labs1-3 dealing with single variables (univariate)
 """
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../'))
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
@@ -11,7 +14,7 @@ from ipywidgets import interact
 from lab_utils_common import compute_cost
 from lab_utils_common import dlblue, dlorange, dldarkred, dlmagenta, dlpurple, dlcolors
 
-plt.style.use('./deeplearning.mplstyle')
+plt.style.use('C:/Users/BM/ML/deeplearning.mplstyle')
 n_bin = 5
 dlcm = LinearSegmentedColormap.from_list(
         'dl_map', dlcolors, N=n_bin)
